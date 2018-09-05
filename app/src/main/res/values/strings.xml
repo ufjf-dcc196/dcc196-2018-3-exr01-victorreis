@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">dcc196-2018-3-exr01-victorreis</string>
+    <string name="nro_alunos">Número de alunos</string>
+    <string name="nro_servidores">Número de servidores</string>
+    <string name="nro_externos">Número de externos</string>
+    <string name="btn_alunos">Alunos</string>
+    <string name="btn_servidores">Servidores</string>
+    <string name="btn_externos">Externos</string>
+
+</resources>
