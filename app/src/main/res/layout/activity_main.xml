@@ -8,69 +8,74 @@
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
-        android:id="@+id/txt_numero_externos"
+        android:id="@+id/txt_nro_externos"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:text="\?"
-        app:layout_constraintBottom_toTopOf="@+id/btn_alunos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintBottom_toTopOf="@+id/txt_titulo_nro_total"
+        app:layout_constraintEnd_toEndOf="@+id/txt_titulo_nro_total"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_nro_externos" />
 
     <TextView
-        android:id="@+id/txt_numero_servidores"
+        android:id="@+id/txt_nro_servidores"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="11dp"
         android:text="\?"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/txt_titulo_nro_externos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_nro_servidores" />
 
     <TextView
-        android:id="@+id/txt_numero_alunos"
-        android:layout_width="wrap_content"
-        android:layout_height="19dp"
-        android:layout_marginBottom="21dp"
-        android:text="\?"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txt_nro_alunos"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="7dp"
+        android:text="\?"
+        app:layout_constraintBottom_toTopOf="@+id/txt_titulo_nro_servidores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_nro_alunos" />
+
+    <TextView
+        android:id="@+id/txt_titulo_nro_alunos"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
         android:layout_marginTop="8dp"
         android:text="@string/nro_alunos"
-        app:layout_constraintBottom_toTopOf="@+id/txt_numero_alunos"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="136dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txt_nro_alunos"
+        app:layout_constraintEnd_toEndOf="@+id/txt_titulo_nro_servidores"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_titulo_nro_servidores"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/nro_servidores"
-        app:layout_constraintBottom_toTopOf="@+id/txt_numero_servidores"
+        app:layout_constraintBottom_toTopOf="@+id/txt_nro_servidores"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_numero_alunos" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_nro_alunos" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txt_titulo_nro_externos"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         android:text="@string/nro_externos"
-        app:layout_constraintBottom_toTopOf="@+id/txt_numero_externos"
-        app:layout_constraintTop_toBottomOf="@+id/txt_numero_servidores"
-        tools:layout_editor_absoluteX="129dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txt_nro_externos"
+        app:layout_constraintStart_toStartOf="@+id/txt_titulo_nro_servidores"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nro_servidores" />
 
     <Button
         android:id="@+id/btn_externos"
@@ -115,6 +120,29 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_servidores"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_numero_externos" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_nro_total" />
+
+    <TextView
+        android:id="@+id/txt_titulo_nro_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="@string/nro_total"
+        app:layout_constraintBottom_toTopOf="@+id/txt_nro_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nro_externos" />
+
+    <TextView
+        android:id="@+id/txt_nro_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/btn_alunos"
+        app:layout_constraintStart_toStartOf="@+id/txt_titulo_nro_total"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_nro_total" />
 
 </android.support.constraint.ConstraintLayout>
