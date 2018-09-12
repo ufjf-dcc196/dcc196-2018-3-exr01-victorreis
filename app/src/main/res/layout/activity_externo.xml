@@ -90,7 +90,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edt_externo_nome" />
 
     <Button
-        android:id="@+id/btn_cadastrar"
+        android:id="@+id/btn_externo_cadastrar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"

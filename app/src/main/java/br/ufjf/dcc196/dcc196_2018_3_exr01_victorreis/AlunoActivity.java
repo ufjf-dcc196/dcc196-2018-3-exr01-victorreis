@@ -21,7 +21,7 @@ public class AlunoActivity extends AppCompatActivity {
         edtAlunoNome = (EditText) findViewById(R.id.edt_aluno_nome);
         edtAlunoMatricula = (EditText) findViewById(R.id.edt_aluno_matricula);
 
-        btnCadastrar = (Button) findViewById(R.id.btn_cadastrar);
+        btnCadastrar = (Button) findViewById(R.id.btn_aluno_cadastrar);
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
