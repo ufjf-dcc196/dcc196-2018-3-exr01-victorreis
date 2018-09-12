@@ -88,9 +88,8 @@ public class MainActivity extends AppCompatActivity {
             txtNumeroAlunos.setText(String.valueOf(totalAlunos));
             txtNumeroTotal.setText(String.valueOf(total));
 
-            Toast.makeText(getApplicationContext(), "ALUNO Cadastrado",Toast.LENGTH_LONG).show();
-            Toast.makeText(getApplicationContext(), "Nome: " + nome,Toast.LENGTH_LONG).show();
-            Toast.makeText(getApplicationContext(), "Matricula: " + matricula,Toast.LENGTH_LONG).show();
+            String texto = "ALUNO Cadastrado\nNome: " + nome + "\nMatrícula: " + matricula;
+            Toast.makeText(getApplicationContext(), texto,Toast.LENGTH_LONG).show();
 
         } else if (requestCode == MainActivity.REQUEST_SERVIDOR && resultCode == Activity.RESULT_OK && data != null) {
             String nome = data.getExtras().getString(MainActivity.SERVIDOR_NOME);
@@ -107,9 +106,8 @@ public class MainActivity extends AppCompatActivity {
             txtNumeroServidores.setText(String.valueOf(totalServidores));
             txtNumeroTotal.setText(String.valueOf(total));
 
-            Toast.makeText(getApplicationContext(), "SERVIDOR Cadastrado",Toast.LENGTH_LONG).show();
-            Toast.makeText(getApplicationContext(), "Nome: " + nome,Toast.LENGTH_LONG).show();
-            Toast.makeText(getApplicationContext(), "Siape: " + siape,Toast.LENGTH_LONG).show();
+            String texto = "SERVIDOR Cadastrado\nNome: " + nome + "\nSIAPE: " + siape;
+            Toast.makeText(getApplicationContext(), texto,Toast.LENGTH_LONG).show();
 
         } else if (requestCode == MainActivity.REQUEST_EXTERNO && resultCode == Activity.RESULT_OK && data != null) {
             String nome = data.getExtras().getString(MainActivity.EXTERNO_NOME);
@@ -126,9 +124,8 @@ public class MainActivity extends AppCompatActivity {
             txtNumeroExternos.setText(String.valueOf(totalExternos));
             txtNumeroTotal.setText(String.valueOf(total));
 
-            Toast.makeText(getApplicationContext(), "SERVIDOR Cadastrado",Toast.LENGTH_LONG).show();
-            Toast.makeText(getApplicationContext(), "Nome: " + nome,Toast.LENGTH_LONG).show();
-            Toast.makeText(getApplicationContext(), "E-mail: " + email,Toast.LENGTH_LONG).show();
+            String texto = "EXTERNO Cadastrado\nNome: " + nome + "\nE-mail: " + email;
+            Toast.makeText(getApplicationContext(), texto,Toast.LENGTH_LONG).show();
         }
     }
 }
