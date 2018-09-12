@@ -18,10 +18,10 @@ public class ExternoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_externo);
 
-        edtExternoNome = (EditText) findViewById(R.id.edt_aluno_nome);
-        edtExternoEmail = (EditText) findViewById(R.id.edt_aluno_matricula);
+        edtExternoNome = (EditText) findViewById(R.id.edt_externo_nome);
+        edtExternoEmail = (EditText) findViewById(R.id.edt_externo_email);
 
-        btnCadastrar = (Button) findViewById(R.id.btn_aluno_cadastrar);
+        btnCadastrar = (Button) findViewById(R.id.btn_externo_cadastrar);
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
