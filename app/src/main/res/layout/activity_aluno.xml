@@ -7,7 +7,7 @@
     tools:context=".AlunoActivity">
 
     <TextView
-        android:id="@+id/lbl_titulo_aluno"
+        android:id="@+id/txt_titulo_aluno"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -17,13 +17,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/cadastro_alunos"
-        app:layout_constraintBottom_toTopOf="@+id/lbl_aluno_nome"
+        app:layout_constraintBottom_toTopOf="@+id/txt_aluno_nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/lbl_aluno_nome"
+        android:id="@+id/txt_aluno_nome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -36,7 +36,7 @@
         app:layout_constraintBottom_toTopOf="@+id/edt_aluno_nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbl_titulo_aluno" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_aluno" />
 
     <EditText
         android:id="@+id/edt_aluno_matricula"
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/lbl_aluno_matricula"
+        android:id="@+id/txt_aluno_matricula"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"

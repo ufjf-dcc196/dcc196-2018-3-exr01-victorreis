@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -68,7 +69,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == MainActivity.REQUEST_ALUNO && resultCode == Activity.RESULT_OK && data != null) {
+            Toast.makeText(getApplicationContext(), "Retornou de ALUNO",Toast.LENGTH_SHORT).show();
 
+        } else if (requestCode == MainActivity.REQUEST_SERVIDOR && resultCode == Activity.RESULT_OK && data != null) {
+            Toast.makeText(getApplicationContext(), "Retornou de SERVIDOR",Toast.LENGTH_SHORT).show();
+
+        } else if (requestCode == MainActivity.REQUEST_EXTERNO && resultCode == Activity.RESULT_OK && data != null) {
+            Toast.makeText(getApplicationContext(), "Retornou de EXTERNO",Toast.LENGTH_SHORT).show();
         }
     }
 }
